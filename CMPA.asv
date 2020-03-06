@@ -41,7 +41,6 @@ legend('Raw','4O poly','8O poly');
 figure(4)
 semilogy(V,I_N)
 hold on;
-
 semilogy(V,abs(polyval(P_4,V)));
 semilogy(V,abs(polyval(P_8,V)));
 hold off;
@@ -68,7 +67,6 @@ If_c = ff_c(x);
 figure(5)
 hold on;
 plot(V,I_N);
-
 plot(x,If_a);
 plot(x,If_b);
 plot(x,If_c);
@@ -106,7 +104,7 @@ figure(7)
 hold on;
 plot(V,I_N);
 plot(V,Inn);
-title('Neural Net plot')
+title('N')
 hold off;
 legend('Raw','nn');
 
@@ -114,8 +112,6 @@ legend('Raw','nn');
 figure(8)
 semilogy(V,abs(I_N));
 hold on;
-
 semilogy(V,abs(Inn));
-title('Neural Net Semi Log')
 hold off;
 legend('Raw','nn');
